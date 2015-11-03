@@ -7,6 +7,9 @@ your .emacs or init.el
 
     (add-to-list 'load-path "~/.emacs.d/manual-packages/jira-post-file")
     (require 'jira-post-file)
+    (setf jira-post-file:base-url "jira.myCompany.com")
+    (setf jira-post-file:username "myUsername")
+
 
 ## Use
 The only public function exposed is `jira-post-file:current-buffer`. The function
